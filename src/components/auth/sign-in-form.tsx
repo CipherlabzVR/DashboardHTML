@@ -75,10 +75,7 @@ export function SignInForm(): React.JSX.Element {
         <Typography variant="h4">Sign in</Typography>
         <Typography color="text.secondary" variant="body2">
           Don&apos;t have an account?{' '}
-          {/* <Link component={RouterLink} href={paths.auth.signUp} underline="hover" variant="subtitle2">
-            Sign up
-          </Link> */}
-          <Link underline="hover" variant="subtitle2">
+          <Link component={RouterLink} href={paths.auth.signUp} underline="hover" variant="subtitle2">
             Sign up
           </Link>
         </Typography>
@@ -141,16 +138,16 @@ export function SignInForm(): React.JSX.Element {
           </Button>
         </Stack>
       </form>
-      {/* <Alert color="warning">
+      <Alert color="warning">
         Use{' '}
         <Typography component="span" sx={{ fontWeight: 700 }} variant="inherit">
-          sew@gmail.com
+          sofia@devias.io
         </Typography>{' '}
         with password{' '}
         <Typography component="span" sx={{ fontWeight: 700 }} variant="inherit">
-          1234
+          Secret1
         </Typography>
-      </Alert> */}
+      </Alert>
     </Stack>
   );
 }
