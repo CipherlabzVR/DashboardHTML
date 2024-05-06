@@ -27,7 +27,7 @@ export function GuestGuard({ children }: GuestGuardProps): React.JSX.Element | n
       return;
     }
 
-    if (user) {
+    if (!user) {
       logger.debug('[GuestGuard]: User is logged in, redirecting to dashboard');
       router.replace(paths.dashboard.overview);
       return;
